@@ -1,0 +1,31 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	--primary-color: #43766c;
+	--secondary-color: #f8fae5;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	background-color: #fcfcf3;
+}
+
+.app {
+	display: grid;
+	place-items: start;
+}
+
+.folder-section {
+	padding: 2rem 3rem 2rem 3rem;
+}

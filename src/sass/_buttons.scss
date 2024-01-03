@@ -1,0 +1,32 @@
+.add-root-btn {
+	font-size: 1.5rem;
+	font-family: inherit;
+	font-weight: 500;
+	padding: 1rem 2rem;
+	border-radius: 1.2rem;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	margin-block: 1rem;
+
+	&:hover {
+		background-color: #28584f;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+}
+
+.form__btn {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	border: none;
+	outline: 2px solid var(--primary-color);
+	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+
+	&:hover {
+		cursor: pointer;
+		outline-offset: 0.2rem;
+		transition: all 0.1s;
+	}
+}

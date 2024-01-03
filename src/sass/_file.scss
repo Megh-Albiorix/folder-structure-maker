@@ -1,0 +1,25 @@
+.file {
+	padding-top: 1rem;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 1.2rem;
+	align-items: center;
+
+	&:not(:last-child) {
+		margin-block-end: 1.5rem;
+	}
+
+	&__details {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		width: max-content;
+	}
+	&__icon {
+		width: 3rem;
+		display: inline-block;
+	}
+	&__icon-img {
+		width: 100%;
+	}
+}
