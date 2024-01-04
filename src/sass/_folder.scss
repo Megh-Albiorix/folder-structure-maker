@@ -5,6 +5,7 @@
 	align-items: center;
 	gap: 1.2rem;
 	position: relative;
+	z-index: 100;
 
 	&:not(:last-child) {
 		margin-block-end: 1.2rem;
@@ -43,7 +44,7 @@
 			position: absolute;
 		}
 
-		& > * {
+		& > *:not(:only-child) {
 			position: relative;
 			z-index: 10;
 
@@ -58,24 +59,51 @@
 				z-index: -10;
 			}
 
-			// &::after {
-			// 	content: "";
-			// 	background-color: rgb(200, 200, 200);
-			// 	position: absolute;
-			// 	height: 4rem;
-			// 	width: 0.2rem;
-			// 	left: -1rem;
-			// 	top: -2rem;
-			// 	z-index: -10;
-			// }
+			&::after {
+				content: "";
+				background-color: rgb(200, 200, 200);
+				position: absolute;
+				height: calc(100% + 2rem);
+				width: 0.2rem;
+				left: -1rem;
+				top: -3.5rem;
+				z-index: -10;
+			}
+		}
+
+		& > *:only-child {
+			position: relative;
+			z-index: 10;
+
+			&::before {
+				content: "";
+				background-color: rgb(200, 200, 200);
+				position: absolute;
+				height: 0.2rem;
+				width: 1.2rem;
+				left: -1rem;
+				top: 1.9rem;
+				z-index: -10;
+			}
+
+			&::after {
+				content: "";
+				background-color: rgb(200, 200, 200);
+				position: absolute;
+				height: 4rem;
+				width: 0.2rem;
+				left: -1rem;
+				top: -2rem;
+				z-index: -10;
+			}
 		}
 	}
-	&__children::before {
-		width: 0.2rem;
-		height: 100%;
-		left: -1.2rem;
-		top: -1.5rem;
-	}
+	// &__children div::before {
+	// 	width: 0.2rem;
+	// 	height: 100%;
+	// 	left: -1.2rem;
+	// 	top: -1.5rem;
+	// }
 
 	&__action-btn {
 		width: 2.3rem;
