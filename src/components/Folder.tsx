@@ -47,7 +47,7 @@ const Folder = ({
 			<div className="folder__details">
 				<span className="folder__icon">
 					<img
-						src="/public/images/folder.png"
+						src="./images/folder.png"
 						alt="Folder Icon"
 						className="folder__icon-img"
 					/>
@@ -60,13 +60,13 @@ const Folder = ({
 						onClick={handleMinusClick}
 						className="folder__action-btn folder__action-btn--minus"
 					>
-						<img src="/public/images/minus.png" alt="Minus Icon" />
+						<img src="./images/minus.png" alt="Minus Icon" />
 					</button>
 					<button
 						onClick={handleAddClick}
 						className="folder__action-btn folder__action-btn--plus"
 					>
-						<img src="/public/images/plus.png" alt="Plus Icon" />
+						<img src="./images/plus.png" alt="Plus Icon" />
 					</button>
 				</>
 			)}

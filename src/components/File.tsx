@@ -39,7 +39,7 @@ const File = ({
 			<div className="file__details">
 				<span className="file__icon">
 					<img
-						src="/public/images/file.png"
+						src="./images/file.png"
 						alt="File Icon"
 						className="file__icon-img"
 					/>
@@ -51,7 +51,7 @@ const File = ({
 					onClick={handleMinusClick}
 					className="folder__action-btn folder__action-btn--minus"
 				>
-					<img src="/public/images/minus.png" alt="Minus Icon" />
+					<img src="./images/minus.png" alt="Minus Icon" />
 				</button>
 			)}
 		</div>
