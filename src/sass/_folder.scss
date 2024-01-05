@@ -69,6 +69,17 @@
 				top: -3.5rem;
 				z-index: -10;
 			}
+
+			&:last-child::after {
+				content: "";
+				background-color: rgb(200, 200, 200);
+				position: absolute;
+				height: 6rem;
+				width: 0.2rem;
+				left: -1rem;
+				top: -4rem;
+				z-index: -10;
+			}
 		}
 
 		& > *:only-child {
